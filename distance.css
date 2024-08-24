@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    display: inline-flex;
+    border: 2px solid whitesmoke;
+    color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+
+#addressForm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#addressForm label {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#addressForm input {
+    padding: 8px;
+    border: 1px solid #333; /* Darker border to match the dark background */
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    width: 200px; /* Set a fixed width */
+}
+
+#addressForm button {
+    background: linear-gradient(45deg, #007bff, #00d2ff); /* Gradient background without white shading */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#addressForm button:hover {
+    background: linear-gradient(45deg, #00d2ff, #007bff); /* Inverted gradient on hover */
+    transform: scale(1.05);
+}
+
+#addressForm button:active {
+    transform: scale(0.95);
+}
+#distanceResult{
+    color: #fff;
+    background: transparent;
+}
+#map { height: 500px; width: 100%; border-radius: 10px;  }
+body { font-family: Arial, sans-serif; background: #0d0d0d; color: #fff; }
+h1 { text-align: center; }
+#addressForm { text-align: center; margin-bottom: 20px; }
+#addressForm input { margin: 5px; }
+
+#distanceResult{
+    display: none;
+    box-sizing: border-box;
+    padding: 1%;
+    background: transparent;
+    color: #fff;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+}

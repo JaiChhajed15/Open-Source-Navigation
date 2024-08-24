@@ -1,0 +1,126 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling with Solid Dark Background */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0d0d0d; /* Dark background */
+    margin: 0; /* Ensure there is no margin around the body */
+}
+
+/* Button Styling */
+button {
+    font-size: 30px; /* Adjusted font size */
+    padding: 15px 30px; /* Adjusted padding */
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    color: #f4f0f0;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(235, 238, 238, 0.5);
+}
+
+/* Active State */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Top Button Styling */
+.but {
+    margin-bottom: 40px; /* Space below the button */
+    background: transparent;
+    color: white;
+}
+
+/* Container for links and distance button */
+.container {
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Align items vertically centered */
+    gap: 20px; /* Add space between elements */
+}
+
+/* Styling for "See Maps" link */
+#div1 a {
+    display: inline-block;
+    text-decoration: none; /* Removes the underline */
+    color: #fff; /* Initial color */
+    font-size: 20px; /* Adjust font size */
+    padding: 15px 30px; /* Add padding for the box */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+}
+
+/* Hover Effect for "See Maps" link */
+#div1 a:hover {
+    background: #2a2a2a; /* Dark background */
+    border-color: #1e90ff; /* Electric blue border on hover */
+    color: #1e90ff; /* Electric blue text on hover */
+    animation: hoverEffect 0.3s ease forwards; /* Apply animation */
+}
+
+/* Styling for "Calculate Distance" button */
+#dist button {
+    font-size: 20px;
+    padding: 10px 20px; 
+    background: #2a2a2a; 
+    border: 2px solid transparent; 
+    color: #fff; 
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for "Calculate Distance" button */
+#dist button:hover {
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    border-color: #1e90ff; /* Electric blue border on hover */
+    /* color: #1e90ff; */
+    animation: hoverEffect 0.3s ease forwards; /* Apply animation */
+}
+
+@keyframes hoverEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover effect to make the other element transparent */
+#div1 a:hover ~ #dist button {
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    color: #1e90ff; 
+    border-color: #0f1413; 
+}
+
+#dist button:hover ~ #div1 a {
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    color: #1e90ff; /* Electric blue text */
+}
